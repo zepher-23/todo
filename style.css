@@ -1,0 +1,155 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    font-family: sans-serif;
+    
+    margin: 0;
+    padding: 0;
+
+  }
+
+
+  /* Set the width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 2px;
+}
+
+/* Set the background color of the scrollbar */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Set the color of the scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+}
+
+/* Change the color of the scrollbar handle when it is being hovered over */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+  .main{
+    
+    background-color: #f2f2f2;
+    padding:20px;
+    width:420px;
+    box-shadow: 2px 5px 100px rgb(139, 139, 139);
+  }
+  .info{
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+  }
+  .info h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    padding:10px;
+    color: #5f5f5f;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width:250px;
+    margin: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    
+    border:none;
+    
+  }
+  input[type="text"]:focus {
+    outline: 1px solid blue;
+    border:none;
+    
+    
+  }
+  
+  input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+  }
+  li button {
+    font-size:small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:90px;
+    height:30px;
+    background-color: rgb(212, 94, 94);
+  }
+  li button{
+    
+    box-shadow: 0 2px 5px rgb(101, 101, 101);
+  }
+
+  button {
+    padding: 10px;
+    font-size: 16px;
+    width:100px;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    border: none;
+    margin: 10px; 
+    box-shadow: 0 4px 5px rgb(101, 101, 101);
+    transition: all ;
+  }
+   
+ button:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.434);
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.434);
+  }
+  
+  li:hover {
+    background-color: #e6e6e6;
+  }
+
+  
+  .completed {
+    background-color: #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.434);
+  }
+  .scroll{
+    overflow-y: hidden;
+  }
+  #task-list {
+    border-radius: 5px;
+    height: 250px;
+   padding: 10px 1px 10px 1px;
+    border :none;
+    background-color: rgb(204, 204, 204);
+    overflow-y: scroll;
+  }
+  li p {
+    width:320px;
+  }
