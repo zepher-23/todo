@@ -1,13 +1,17 @@
 const newTaskInput = document.getElementById("new-task");
 const addTaskButton = document.getElementById("add-task");
 const taskList = document.getElementById("task-list");
+
 const countElement = document.getElementById("count");
+
 countElement.textContent = 0;
 let listCount = taskList.childElementCount;
 const done = document.getElementById("done");
 const pending = document.getElementById("pending")
 done.textContent = 0;
 pending.textContent = listCount - done.textContent;
+
+
 
 // Add event listener to the add task button
 addTaskButton.addEventListener("click", function() {
